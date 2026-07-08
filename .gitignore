@@ -1,0 +1,62 @@
+# ==========================
+# Raw Data
+# ==========================
+
+# Do not upload raw datasets
+data/raw/*
+
+# Keep the empty raw folder tracked
+!data/raw/.gitkeep
+
+
+# ==========================
+# Python Files
+# ==========================
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# ==========================
+# Jupyter Notebook Files
+# ==========================
+
+# Temporary notebook checkpoints
+.ipynb_checkpoints/
+
+
+# ==========================
+# Virtual Environments
+# ==========================
+
+.env
+.venv/
+venv/
+
+
+# ==========================
+# Operating System Files
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+
+# ==========================
+# Machine Learning Outputs
+# ==========================
+
+# Saved models
+*.pkl
+*.joblib
+*.h5
+
+
+# ==========================
+# VS Code Files (optional)
+# ==========================
+
+.vscode/
