@@ -80,6 +80,7 @@ the student's actual final grade.
 | Variable | Type | Description | Rule | Use |
 |---|---|---|---|---|
 | `passed` | Binary integer | Pass/fail outcome created from `G3` | `1` if `G3 >= 10`, else `0` | Classification target |
+
 The `passed` variable is created from the final grade `G3`.
 The classification rule is:
 ```python
