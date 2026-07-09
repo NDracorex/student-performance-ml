@@ -73,8 +73,8 @@ classification.
 | Variable | Type | Description | Use |
 |---|---|---|---|
 | `G3` | Numeric | Final student grade | Regression target |
-`G3` is the original final grade variable. It is used when the goal is to predict
-the student's actual final grade.
+
+`G3` is the original final grade variable. It is used when the goal is to predict the student's actual final grade.
 
 ### Classification Target
 | Variable | Type | Description | Rule | Use |
