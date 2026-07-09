@@ -87,6 +87,7 @@ The classification rule is:
 df["passed"] = (df["G3"] >= 10).astype(int)
 ```
 | Value | Meaning |
+|---|---|
 | 1 | Student passed |
 | 0 | Student did not pass |
 
