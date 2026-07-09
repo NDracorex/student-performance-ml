@@ -68,21 +68,23 @@ variable, G3, can serve as the primary prediction target.
 ## Target Variables
 This project uses two target variables: one for regression and one for
 classification.
+
 ### Regression Target
 | Variable | Type | Description | Use |
 |---|---|---|---|
 | `G3` | Numeric | Final student grade | Regression target |
 `G3` is the original final grade variable. It is used when the goal is to predict
 the student's actual final grade.
+
 ### Classification Target
 | Variable | Type | Description | Rule | Use |
 |---|---|---|---|---|
-| `passed` | Binary integer | Pass/fail outcome created from `G3` | `1` if `G3 >=
-10`, else `0` | Classification target |
+| `passed` | Binary integer | Pass/fail outcome created from `G3` | `1` if `G3 >= 10`, else `0` | Classification target |
 The `passed` variable is created from the final grade `G3`.
 The classification rule is:
 ```python
 df["passed"] = (df["G3"] >= 10).astype(int)
+```
 
 ## Interpretation Notes
 The demographic variables describe basic student background information.
