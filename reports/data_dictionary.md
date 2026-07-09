@@ -86,6 +86,25 @@ The classification rule is:
 ```python
 df["passed"] = (df["G3"] >= 10).astype(int)
 ```
+| Value | Meaning |
+| 1 | Student passed |
+| 0 | Student did not pass |
+
+#### Chosen Threshold
+The chosen threshold is:
+G3 >= 10
+Students with G3 >= 10 are labeled as passing.
+Students with G3 < 10 are labeled as not passing or at risk.
+
+#### Threshold Limitation
+One limitation of this threshold is that it creates a hard cutoff. For example, a student with G3 = 9 is
+labeled as not passing, while a student with G3 = 10 is labeled as passing, even though their
+performance may be very similar.
+
+#### Final Decision
+For the first version of the project, the G3 >= 10 threshold will be kept because it is simple,
+interpretable, and useful for creating a binary classification target. The limitation of the hard cutoff
+should be documented in the final report.
 
 ## Interpretation Notes
 The demographic variables describe basic student background information.
