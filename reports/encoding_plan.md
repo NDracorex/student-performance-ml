@@ -88,43 +88,43 @@ Keep numeric ordinal variables as numeric features.
 
 # Categorical Variable Encoding Plan
 
-| Column | Variable Type | Encoding | Reason |
-|----------|--------------|-----------|---------|
-| school | Binary | Binary | Two schools |
-| sex | Binary | Binary | Two categories |
-| address | Binary | Binary | Urban/Rural labels |
-| famsize | Binary | Binary | Two family-size groups |
-| Pstatus | Binary | Binary | Parent status |
-| Mjob | Nominal | One-Hot | No ranking |
-| Fjob | Nominal | One-Hot | No ranking |
-| reason | Nominal | One-Hot | No ranking |
-| guardian | Nominal | One-Hot | No ranking |
-| schoolsup | Binary | Binary | Yes/No |
-| famsup | Binary | Binary | Yes/No |
-| paid | Binary | Binary | Yes/No |
-| activities | Binary | Binary | Yes/No |
-| nursery | Binary | Binary | Yes/No |
-| higher | Binary | Binary | Yes/No |
-| internet | Binary | Binary | Yes/No |
-| romantic | Binary | Binary | Yes/No |
+| Column | Example Values | Variable Type | Encoding Method | Reason |
+|---|---|---|---|---|
+| school | GP, MS | Binary/Nominal | Binary encoding | Two school categories; no ranking |
+| sex | F, M | Binary/Nominal | Binary encoding | Two categories only |
+| address | U, R | Binary/Nominal | Binary encoding | Urban and rural are labels |
+| famsize | GT3, LE3 | Binary/Nominal | Binary encoding | Two family-size categories |
+| Pstatus | A, T | Binary/Nominal | Binary encoding | Two parent-status categories |
+| Mjob | teacher, health, services, other, at_home | Nominal | One-hot encoding | Job categories have no natural order |
+| Fjob | teacher, health, services, other, at_home | Nominal | One-hot encoding | Job categories have no natural order |
+| reason | course, home, reputation, other | Nominal | One-hot encoding | School-choice reasons are unordered labels |
+| guardian | mother, father, other | Nominal | One-hot encoding | Guardian category has no ranking |
+| schoolsup | yes, no | Binary | Binary encoding | Yes/no variable |
+| famsup | yes, no | Binary | Binary encoding | Yes/no variable |
+| paid | yes, no | Binary | Binary encoding | Yes/no variable |
+| activities | yes, no | Binary | Binary encoding | Yes/no variable |
+| nursery | yes, no | Binary | Binary encoding | Yes/no variable |
+| higher | yes, no | Binary | Binary encoding | Yes/no variable |
+| internet | yes, no | Binary | Binary encoding | Yes/no variable |
+| romantic | yes, no | Binary | Binary encoding | Yes/no variable |
 
 ---
 
 # Numeric Ordinal Variables
 
-| Column | Decision |
-|----------|-----------|
-| Medu | Keep numeric |
-| Fedu | Keep numeric |
-| traveltime | Keep numeric |
-| studytime | Keep numeric |
-| failures | Keep numeric |
-| famrel | Keep numeric |
-| freetime | Keep numeric |
-| goout | Keep numeric |
-| Dalc | Keep numeric |
-| Walc | Keep numeric |
-| health | Keep numeric |
+| Column | Variable Type | Encoding Decision | Reason |
+|---|---|---|---|
+| Medu | Ordinal | Keep numeric | Mother education level has ordered values |
+| Fedu | Ordinal | Keep numeric | Father education level has ordered values |
+| traveltime | Ordinal | Keep numeric | Travel-time levels are ordered |
+| studytime | Ordinal | Keep numeric | Study-time levels are ordered |
+| failures | Ordinal/Numeric | Keep numeric | Number of previous failures has numeric meaning |
+| famrel | Ordinal | Keep numeric | Family relationship quality is ordered |
+| freetime | Ordinal | Keep numeric | Free-time level is ordered |
+| goout | Ordinal | Keep numeric | Going-out frequency is ordered |
+| Dalc | Ordinal | Keep numeric | Workday alcohol consumption level is ordered |
+| Walc | Ordinal | Keep numeric | Weekend alcohol consumption level is ordered |
+| health | Ordinal | Keep numeric | Health status scale is ordered |
 
 ---
 
