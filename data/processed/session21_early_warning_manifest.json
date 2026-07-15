@@ -1,0 +1,38 @@
+{
+  "session": 21,
+  "title": "Early-warning dataset design",
+  "created_utc": "2026-07-15T18:17:20.281204+00:00",
+  "feature_artifact": "data/processed/X_early.csv",
+  "target_artifact": "data/processed/y_early.csv",
+  "rows": 395,
+  "full_feature_count": 41,
+  "early_feature_count": 39,
+  "removed_columns": [
+    "school",
+    "sex",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic"
+  ],
+  "target_column": "G3",
+  "validation": {
+    "G1_absent_from_X_early": true,
+    "G2_absent_from_X_early": true,
+    "G3_absent_from_X_early": true,
+    "G3_saved_as_target": true,
+    "row_counts_match": true,
+    "saved_files_match_memory": true
+  }
+}
