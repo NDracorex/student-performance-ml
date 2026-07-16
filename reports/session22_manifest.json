@@ -1,0 +1,29 @@
+{
+    "session": 22,
+    "title": "Train/Test Split",
+    "created_utc": "2026-07-16T14:55:08.109411+00:00",
+    "rows": 395,
+    "full_features": 41,
+    "early_features": 39,
+    "train_rows": 316,
+    "test_rows": 79,
+    "random_state": 42,
+    "test_size": 0.2,
+    "same_train_students": true,
+    "same_test_students": true,
+    "no_overlap": true,
+    "summary": [
+        {
+            "Scenario": "Full",
+            "Train Rows": 316,
+            "Test Rows": 79,
+            "Features": 41
+        },
+        {
+            "Scenario": "Early Warning",
+            "Train Rows": 316,
+            "Test Rows": 79,
+            "Features": 39
+        }
+    ]
+}
