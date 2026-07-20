@@ -1,0 +1,2 @@
+Session,Week,Task Type,Scenario,Feature Set,Target,Model,Regularization,Alpha,L1 Ratio,MAE,RMSE,R2
+28,3,Regression,Full-information,X_full,G3,Random Forest,Ensemble (300 Trees),,,1.1706329113924052,1.97473322451841,0.8098238322966482
