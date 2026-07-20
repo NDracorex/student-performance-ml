@@ -1,0 +1,2 @@
+Session,Week,Task Type,Scenario,Feature Set,Target,Model,Regularization,Alpha,L1 Ratio,MAE,RMSE,R2
+30,3,Regression,Full-information,X_full,G3,MLP Regressor,"MLP (64, 32) Pipeline",,,2.020337290519022,2.784599125864401,0.6218495773067232
