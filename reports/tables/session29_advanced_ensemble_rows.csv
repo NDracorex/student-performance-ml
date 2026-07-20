@@ -1,0 +1,3 @@
+Session,Week,Task Type,Scenario,Feature Set,Target,Model,Regularization,Alpha,L1 Ratio,MAE,RMSE,R2
+29,3,Regression,Full-information,X_full,G3,Extra Trees,Ensemble (300 Trees),,,1.3311814345991562,2.2644825354383293,0.7499210274296113
+29,3,Regression,Full-information,X_full,G3,Gradient Boosting,Boosting Ensemble,,,1.159378776277203,2.004681507881387,0.8040117686390182
