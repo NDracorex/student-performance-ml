@@ -1,0 +1,2 @@
+Session,Week,Task Type,Scenario,Feature Set,Target,Model,Accuracy,Precision,Recall,F1 Score,ROC AUC
+32,3,Classification,Full-information,X_full,At-Risk (G3 < 10),Logistic Regression,0.8987341772151899,0.8275862068965517,0.8888888888888888,0.8571428571428571,0.9736467236467237
