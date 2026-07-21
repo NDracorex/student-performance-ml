@@ -1,0 +1,15 @@
+SESSION 43: INTERPRETABILITY COMPARISON NOTE
+============================================
+Target: G3 (Early-Warning Setup, G1 & G2 Excluded)
+Model: Random Forest Regressor (n_estimators=300, random_state=42)
+
+MAIN RESULTS:
+Top Built-in Predictor: absences
+Top Permutation Predictor: failures
+Shared Top-10 Predictors (4): absences, age, failures, goout
+Spearman Rank Correlation: 0.4462
+
+INTERPRETATION:
+- Built-in Gini importance describes how frequently and effectively the Random Forest used a predictor when constructing tree splits during training.
+- Permutation importance directly measures how much test-set RMSE deteriorates when a feature is randomly shuffled on unseen test data.
+- Disagreements arise when features are correlated, redundant, or when continuous/encoded features offer additional splitting opportunities during training.
