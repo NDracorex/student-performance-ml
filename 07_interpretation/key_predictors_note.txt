@@ -1,0 +1,21 @@
+SESSION 42 KEY PREDICTORS INTERPRETATION NOTE
+==================================================
+Model: Random Forest Regressor (n_estimators=300, random_state=42)
+Feature Set: Early-Warning Predictors (Excluding G1 and G2)
+
+TOP 10 INFLUENTIAL PREDICTORS:
+absences      0.184185
+failures      0.137633
+goout         0.051275
+age           0.041927
+health        0.038272
+freetime      0.037064
+Walc          0.034604
+Medu          0.034586
+studytime     0.033418
+traveltime    0.029021
+
+RESEARCH INTERPRETATION:
+The feature importance ranking indicates that historical academic indicators (such as failures)
+and student behavioral characteristics (such as absences and study time) play the most significant
+roles in predicting final student performance (G3) prior to term grading.
