@@ -1,0 +1,20 @@
+SESSION 44: FULL-INFORMATION VS EARLY-WARNING COMPARISON NOTE
+=============================================================
+Model: Random Forest Regressor (n_estimators=300, random_state=42)
+Target Variable: G3 (Final Grade)
+
+RESULTS SUMMARY:
+1. Full-Information Scenario (With G1 & G2):
+   - MAE:  1.1706
+   - RMSE: 1.9747
+   - R2:   0.8098
+
+2. Early-Warning Scenario (Excluding G1 & G2):
+   - MAE:  3.0727
+   - RMSE: 3.8589
+   - R2:   0.2738
+
+KEY LEAKAGE-AWARE FINDINGS:
+- Excluding earlier grades (G1 and G2) increases test RMSE by 1.8842 points and decreases R2 by 0.5360.
+- While full-information models yield higher accuracy, including G1/G2 constitutes temporal leakage for early-warning deployment.
+- The early-warning model establishes a realistic predictive baseline prior to academic term grading.
